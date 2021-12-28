@@ -1,0 +1,31 @@
+// call function
+const person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  const person1 = {
+    firstName:"siva",
+    lastName: "kumar"
+  }
+  const person2 = {
+    firstName:"raja",
+    lastName: "sekar"
+  }
+  
+  
+  person.fullName.call(person1);
+
+  //apply function is used to add values to mentioned variable.
+  const person1 = {
+    fullName: function(city, country) {
+      return this.firstName + " " + this.lastName + "," + city + "," + country;
+    }
+  }
+  
+  const person1 = {
+    firstName:"shankar",
+    lastName: "guru"
+  }
+  
+  person.fullName.apply(person1, ["salem", "india"]);
