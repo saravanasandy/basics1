@@ -1,0 +1,16 @@
+The Prototypal Inheritance is the feature in javascript used to add methods and properties in objects. 
+In this method we can use which an object can inherit the properties and methods of another object.
+
+
+let animal = {
+  eats: true
+};
+let rabbit = {
+  jumps: true
+};
+
+rabbit.__proto__ = animal; 
+
+// we know both properties in rabbit.
+alert( rabbit.eats ); 
+alert( rabbit.jumps ); 
