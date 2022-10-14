@@ -1,0 +1,117 @@
+
+
+Difference Between Document object & Window object
+
+
+Document Object:
+The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects,  we can add dynamic content to our web page.
+Syntax:
+ * document.property_name :
+* document.method_name : 
+
+example:
+
+     document.title :  will return the title of the document
+
+coding:-
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title> Day 1 </title>
+</head>
+<body>
+	<h1> Guvi </h1>
+	<button onclick="myFunction()">CLICK ME</button>
+	<p id="demo"></p>
+
+
+	<script>
+		function myFunction() {
+			var title = document.title;
+			var domain = document.domain;
+			var body = document.body;
+			document.getElementById("demo").innerHTML =
+			"the title of the document is : "
+			+ title
+			+ "<br>"
+			+ "domain : "
+			+ domain
+			+ "<br>"
+			+ "body : "
+			+ body;
+		}
+	</script>
+
+</body>
+</html>
+
+Output:-
+
+Guvi
+CLICK ME
+the title of the document is : Day 1
+domain : 127.0.0.1
+body : [object HTMLBodyElement]
+
+
+
+********************************************************            Window Object                   *************************************************
+
+The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created.
+
+Syntax:
+* window.property_name :
+* window.method_name  :
+
+example:
+
+window.innerHeight : will return the height of the content area of the browser
+
+Coding:-
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title> Day 1 </title>
+</head>
+<body>
+	<h1>Guvi</h1>
+	<button onclick="show()">Check</button>
+	<p id="prop"></p>
+
+
+	<script>
+		function show() {
+			var h = window.innerHeight;
+			var w = window.innerWidth;
+			var l = window.location;
+			var c = window.closed;
+			document.getElementById("prop").innerHTML =
+			"Frame's Height: "
+			+ h + "<br>"
+			+ "Frame's Width: "
+			+ w + "<br>"
+			+ "Window location:"
+			+ l
+			+ "<br>"
+			+ "Window Closed: "
+			+ c;
+		}
+	</script>
+
+</body>
+</html>
+
+Output:- 
+
+Guvi
+Check
+Frame's Height: 714
+Frame's Width: 1536
+Window location:http://127.0.0.1:5500/Day%201/Index.html
+Window Closed: false
+
+
