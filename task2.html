@@ -1,14 +1,39 @@
-<script>
-     const arr =typeof(1);
-     const arr2 = typeof(1,1);
-     const arr3 = typeof("1.1");
-     const arr4 = typeof(true);
-     const arr5 = typeof(NaN);
-     const arr6 = typeof(null);
-     const arr7 = typeof(undefined);
-     const arr8 = typeof([]);
-     const arr9 = typeof({});
+Objects:-
+   A JavaScript object is a collection of named values having state and behavior (properties and method)
+   objects consists of key and value.
+ 
+ 
+ syntax:-
+    var objectName = {};
     
-     const len = arr +" " +arr2 +" "+ arr3 +" "+ arr4 +" "+ arr5 +" "+ arr6 +" "+ arr7 +" "+ arr8 +" "+ arr9;
+    
+    Example :-
+    
+    var StudentName ={
+    name : "staney prakash",
+    age : 21,
+    address : "mumbai",
+    phone : 0422345678
+    };
+    console.log(StudentName);
+    
+  
+  Internal objects:-
+   * Add object properties by (key & value)  
+     syntax:-
+     objectname.keyName = value;
+     StudentName.gender = "male";
+   
+  * Delete object properties by key.
+    syntax:-\
+    Delete objectName.keyname
+    Delete StudentName.gender
+    
+  * Access object properties by keyName.
+  syntax:-\
+  Objectname.keyname
+   !.StudentName.age
+   2. Studentname["address"]
 
-      console.log(len);
+
+
